@@ -1,0 +1,112 @@
+#main {
+    background-color: rgb(57, 18, 65);
+    color: white;
+    margin: auto;
+    max-width: 1500px;
+}
+
+header {
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 1px solid olive;
+}
+
+#intro {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+img {
+    grid-column: 1;
+    height: 400px;
+    object-fit: cover;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#aboutme {
+    grid-column: 2;
+    max-width: 1400px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    padding: 20px;
+}
+
+body {
+    background-color: rgb(15, 14, 14);
+    border: none;
+    margin: 0;
+}
+
+#worksection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#accomplishments {
+    grid-column: 1;
+    text-align: center;
+}
+
+#work {
+    grid-column: 2;
+    text-align: center;
+}
+
+footer {
+    padding: 5px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px;
+}
+
+h2 {
+    text-align: center;
+    border-bottom: 1px solid olive;
+    margin: 10px;
+}
+
+li {
+    text-align: left;
+    padding: 5px;
+    list-style: square;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: larger;
+    font-style: italic;
+}
+
+a {
+    color: rgb(55, 170, 241);
+}
+
+@media (max-width: 600px) {
+    #intro {
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        grid-row: 1;
+    }
+    #aboutme {
+        grid-row: 2;
+        width: fit-content;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: larger;
+        padding: 20px;
+    }
+    #worksection {
+        display: flex;
+        flex-direction: column;
+    }
+    #accomplishments {
+        grid-row: 1;
+        text-align: center;
+    }
+    #work {
+        grid-row: 2;
+        text-align: center;
+    }
+}
